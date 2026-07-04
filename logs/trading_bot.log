@@ -1,0 +1,45 @@
+2026-07-04 07:55:14 | INFO     | bot.client | Binance Futures Demo client initialized. Base URL: https://demo-fapi.binance.com/fapi
+2026-07-04 07:55:14 | INFO     | bot.orders | Placing order:
+----- ORDER REQUEST SUMMARY -----
+Symbol   : BTCUSDT
+Side     : BUY
+Type     : MARKET
+Quantity : 0.01
+---------------------------------
+2026-07-04 07:55:14 | DEBUG    | bot.orders | Sending request to Binance Futures Demo API: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01}
+2026-07-04 07:55:15 | INFO     | bot.orders | Order response received: {'orderId': 18856114531, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'EbtjoHQuxVJC73qGGJzFiZ', 'price': '0.00', 'origQty': '0.0100', 'executedQty': '0.0000', 'cumQty': '0.0000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1783133715560}
+2026-07-04 07:57:45 | INFO     | bot.client | Binance Futures Demo client initialized. Base URL: https://demo-fapi.binance.com/fapi
+2026-07-04 07:57:45 | INFO     | bot.orders | Placing order:
+----- ORDER REQUEST SUMMARY -----
+Symbol   : BTCUSDT
+Side     : SELL
+Type     : LIMIT
+Quantity : 0.01
+Price    : 70000.0
+---------------------------------
+2026-07-04 07:57:45 | DEBUG    | bot.orders | Sending request to Binance Futures Demo API: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.01, 'price': 70000.0, 'timeInForce': 'GTC'}
+2026-07-04 07:57:47 | INFO     | bot.orders | Order response received: {'orderId': 18856503987, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'qccaSlM0IBQCpHb7uegrM8', 'price': '70000.00', 'origQty': '0.0100', 'executedQty': '0.0000', 'cumQty': '0.0000', 'timeInForce': 'GTC', 'type': 'LIMIT', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'LIMIT', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1783133867396}
+2026-07-04 08:13:50 | INFO     | bot.client | Binance Futures Demo client initialized. Base URL: https://demo-fapi.binance.com/fapi
+2026-07-04 08:13:50 | INFO     | bot.orders | Placing order:
+----- ORDER REQUEST SUMMARY -----
+Symbol   : BTCUSDT
+Side     : SELL
+Type     : STOP_LIMIT
+Quantity : 0.01
+Price    : 59000.0
+Stop Price : 59500.0
+---------------------------------
+2026-07-04 08:13:50 | DEBUG    | bot.orders | Sending request to Binance Futures Demo API: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'STOP', 'quantity': 0.01, 'price': 59000.0, 'stopPrice': 59500.0, 'timeInForce': 'GTC'}
+2026-07-04 08:13:51 | ERROR    | bot.orders | Binance API rejected the order: APIError(code=-4120): Order type not supported for this endpoint. Please use the Algo Order API endpoints instead.
+2026-07-04 08:18:16 | INFO     | bot.client | Binance Futures Demo client initialized. Base URL: https://testnet.binancefuture.com/fapi
+2026-07-04 08:18:16 | INFO     | bot.orders | Placing order:
+----- ORDER REQUEST SUMMARY -----
+Symbol   : BTCUSDT
+Side     : SELL
+Type     : STOP_LIMIT
+Quantity : 0.01
+Price    : 59000.0
+Stop Price : 59500.0
+---------------------------------
+2026-07-04 08:18:16 | DEBUG    | bot.orders | Sending request to Binance Futures Demo API (algoOrder): {'algoType': 'CONDITIONAL', 'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'STOP', 'quantity': 0.01, 'price': 59000.0, 'triggerPrice': 59500.0, 'timeInForce': 'GTC'}
+2026-07-04 08:18:17 | INFO     | bot.orders | Order response received: {'algoId': 1000000124826074, 'clientAlgoId': '1YoNghRLUjO25gkZPRLYRg', 'algoType': 'CONDITIONAL', 'orderType': 'STOP', 'symbol': 'BTCUSDT', 'side': 'SELL', 'positionSide': 'BOTH', 'timeInForce': 'GTC', 'quantity': '0.0100', 'algoStatus': 'NEW', 'triggerPrice': '59500.00', 'price': '59000.00', 'icebergQuantity': None, 'selfTradePreventionMode': 'EXPIRE_MAKER', 'workingType': 'CONTRACT_PRICE', 'priceMatch': 'NONE', 'closePosition': False, 'priceProtect': False, 'reduceOnly': False, 'createTime': 1783135097966, 'updateTime': 1783135097968, 'triggerTime': 0, 'goodTillDate': 0}
