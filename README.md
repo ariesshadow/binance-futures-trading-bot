@@ -83,9 +83,12 @@ All requests, responses, and errors are also written to `logs/trading_bot.log`.
 
 ## Assumptions
 
-- This project uses the **Binance Futures Demo Trading** environment, which
-  replaced the older standalone `testnet.binancefuture.com` site. The REST
-  API base URL used internally is `https://demo-fapi.binance.com/fapi`.
+- This project uses the **Binance Futures Demo Trading** environment. The
+  underlying `python-binance` client is initialized with `testnet=True`,
+  which routes all Futures REST calls through
+  `https://testnet.binancefuture.com/fapi`. Binance kept this host active
+  for API traffic even after retiring the old standalone testnet website
+  in favour of the unified Demo Trading UI at demo.binance.com.
 - Only MARKET and LIMIT order types were implemented as per the core
   requirements. LIMIT orders use `GTC` (Good-Til-Cancelled) as the time in force.
 - API keys are read from a local `.env` file and are never committed to
